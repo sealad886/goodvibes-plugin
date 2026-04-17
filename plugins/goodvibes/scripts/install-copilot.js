@@ -83,7 +83,7 @@ This repository uses GoodVibes instruction files for Copilot.
 }
 
 function main() {
-  console.log('Installing GoodVibes GitHub Copilot instructions...\n');
+  console.info('Installing GoodVibes GitHub Copilot instructions...\n');
 
   ensureDir(GITHUB_DIR);
   ensureDir(INSTRUCTIONS_DIR);
@@ -99,9 +99,11 @@ function main() {
     'utf-8'
   );
 
-  console.log(`Installed ${GOODVIBES_INSTRUCTIONS_FILE}`);
-  console.log(`Installed ${COPILOT_INSTRUCTIONS_FILE}`);
-  console.log('\nDone! Restart your Copilot-enabled client to reload instructions.');
+  console.info(`Installed ${GOODVIBES_INSTRUCTIONS_FILE}`);
+  console.info(`Installed ${COPILOT_INSTRUCTIONS_FILE}`);
+  console.info(
+    '\nDone! Restart your Copilot-enabled client to reload instructions.'
+  );
 }
 
 main();
