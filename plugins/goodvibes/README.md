@@ -170,6 +170,8 @@ vibecoding (interactive: shows progress, explains decisions, asks on ambiguity) 
 
 ## Installation
 
+### Claude Code plugin install
+
 ```bash
 claude plugin marketplace add mgd34msu/goodvibes-plugin
 claude plugin install goodvibes@goodvibes-market
@@ -192,6 +194,17 @@ Set your output style:
 /output-style goodvibes:vibecoding   # Interactive mode
 /output-style goodvibes:justvibes    # Autonomous mode
 ```
+
+### GitHub Copilot install
+
+```bash
+npm install
+npm run install:copilot --workspace=plugins/goodvibes
+```
+
+This writes:
+- `.github/copilot-instructions.md`
+- `.github/instructions/goodvibes.instructions.md`
 
 ## Precision Engine — 12 Tools
 
