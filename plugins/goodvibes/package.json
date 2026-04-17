@@ -9,7 +9,7 @@
     "build:server": "cd tools/implementations/tool-search-server && npm install && npm run build",
     "build:hooks": "cd hooks/scripts && npm install && npm run build",
     "install:hooks": "node scripts/install-hooks.js",
-    "install:copilot": "node scripts/install-copilot.js",
+
     "migrate": "npx tsx scripts/migrate-content.ts",
     "validate": "npx tsx scripts/validate.ts",
     "postinstall": "npm run build && npm run install:hooks"

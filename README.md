@@ -39,18 +39,12 @@ Set your output style:
 /output-style goodvibes:justvibes    # Autonomous mode
 ```
 
-### GitHub Copilot install
-
-Install the plugin files, then generate Copilot instruction files:
+### GitHub Copilot CLI install
 
 ```bash
-npm install
-npm run install:copilot --workspace=plugins/goodvibes
+copilot plugin marketplace add sealad886/goodvibes-plugin
+copilot plugin install goodvibes@goodvibes-market
 ```
-
-This writes:
-- `.github/copilot-instructions.md`
-- `.github/instructions/goodvibes.instructions.md`
 
 ## At a Glance
 

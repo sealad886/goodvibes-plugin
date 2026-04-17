@@ -195,16 +195,12 @@ Set your output style:
 /output-style goodvibes:justvibes    # Autonomous mode
 ```
 
-### GitHub Copilot install
+### GitHub Copilot CLI install
 
 ```bash
-npm install
-npm run install:copilot --workspace=plugins/goodvibes
+copilot plugin marketplace add sealad886/goodvibes-plugin
+copilot plugin install goodvibes@goodvibes-market
 ```
-
-This writes:
-- `.github/copilot-instructions.md`
-- `.github/instructions/goodvibes.instructions.md`
 
 ## Precision Engine — 12 Tools
 
